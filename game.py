@@ -23,5 +23,19 @@ class TicTacToe:
         #     if spot == ' ':
         #         moves.append(i)
         # return moves
+
+    def empty_squares(self):
+        return ' ' in self.board
+    
+    def num_empty_squares(self):
+        return len(self.available_moves())
+    
+
+def play(game, x_player, o_player, print_game=True):
+    if print_game:
+        game.print_board_nums()
+
+    letter = 'X' # Starting letter
+    #    
        
         
