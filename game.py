@@ -36,6 +36,6 @@ def play(game, x_player, o_player, print_game=True):
         game.print_board_nums()
 
     letter = 'X' # Starting letter
-    #    
+    #  
        
         
