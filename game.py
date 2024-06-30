@@ -36,6 +36,14 @@ def play(game, x_player, o_player, print_game=True):
         game.print_board_nums()
 
     letter = 'X' # Starting letter
-    #  
+    #  get the move over the appporiate player
+    if letter == '0':
+        square = o_player.get_move(game)
+    else: 
+        square = x_player.get_move(game)
+    
+    # let's define a function to make a move!
+    if game.make_move(square, letter):
+        if print_game
        
         
